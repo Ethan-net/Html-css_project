@@ -502,6 +502,9 @@ font-weight: 600;
     width: 90%;
     
 }
+.seven_flex>div>img{
+    border-radius: 12px;
+}
 .seven_flex{
     display: flex;
     flex-wrap: wrap;
@@ -541,7 +544,7 @@ font-weight: 600;
    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 45px;
+    gap: 40px;
     justify-content: center;
 
 }
