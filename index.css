@@ -11,6 +11,7 @@ header{
     top: 0;
     z-index: 1000;
     padding: 40px 0;
+    box-shadow: 0 10px 20px #646465
 }
 nav{
     display: flex;
@@ -321,6 +322,8 @@ form>button{
     grid-area: first_box;
     color: white;
     width: 336px;
+    height: 233px;
+    border-radius: 12px;
     /* width: 100%; */
 }
 .box_cont{
@@ -334,10 +337,12 @@ form>button{
     grid-area: second_box;
     width: 336px;
     height: 233px;
+    border-radius: 12px;
     /* width: 100%; */
 }
 .third_box{
     grid-area: third_box;
+    border-radius: 12px;
     
 }
 /* FOURTH SECTION */
@@ -350,17 +355,13 @@ form>button{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 6vw;
-    justify-content: center;
+    gap: 1vw;
+
+
+    /* gap: 6vw; */
+    /* justify-content: center; */
 }
-.property_flex2{
-    display: flex;
-    justify-content: space-between;
-    margin-top:5vh ;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6vw;
-}
+
 .p-line{
     display: inline;
 }
@@ -379,12 +380,13 @@ form>button{
     border: 1px solid;
     border-color: #d1d1d1;
     border-radius: 15px;
+    margin-bottom: 5vh;
 
 }
 .property_flex2>div{
     border: 1px solid;
     border-color: #d1d1d1;
-    /* border-radius: 15px; */
+    border-radius: 15px;
 
 }
 .property_flex1>div>p,.flex_it{
@@ -392,7 +394,8 @@ form>button{
 }
 
 .property_flex2>div>p,.flex_it2{
-    padding: 1rem 2rem 1rem 0;
+    /* padding: 1rem 2rem 1rem 0; */
+    margin: 1rem 0 1rem 2rem;
 }
 
 .prop_name{
@@ -535,8 +538,10 @@ font-weight: 600;
 
 }
 .testimony_flex{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 45px;
     justify-content: center;
     width: 620px;
@@ -616,20 +621,19 @@ footer{
        display: flex;
        flex-direction: column;   
     }
-    .first_box{
-        width: 100%;
-        height: 223px;
-    }
-    .second_box{
-        width: 100%;
-        height: 223px;
-    }
-    .third_box{
-        width: 100%;
-        /* height: 223px; */
-    }
     .foot_foot{
         flex-direction: row-reverse;
+    }
+    
+}
+
+@media only screen  and ( max-width: 980px){
+    nav{
+        height: 50px;
+        
+    }
+    .logo{
+        font-size: 30px;
     }
 }
 
@@ -667,4 +671,20 @@ footer{
     .nav_div{
         font-size: 10px;
     }
+    .first_box{
+        width: 100%;
+        height: 223px;
+    }
+    .property_flex1{
+        /* gap: 6vw; */
+        justify-content: center;
+    }
+    .second_box{
+        width: 100%;
+        height: 223px;
+    }
+    .third_box{
+        width: 100%;
+    }    
+    
 }
