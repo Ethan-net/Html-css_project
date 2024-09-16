@@ -538,13 +538,11 @@ font-weight: 600;
 
 }
 .testimony_flex{
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+   
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 45px;
     justify-content: center;
-    width: 620px;
 
 }
 /* FOOTER */
