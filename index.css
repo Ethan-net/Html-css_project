@@ -420,7 +420,7 @@ font-weight: 600;
     flex-wrap: wrap;
     text-align: center;
     /* align-items: center; */
-    gap: 3vh;
+    /* gap: 3vh; */
     
 
 }
@@ -632,6 +632,16 @@ footer{
     .cont_left{
         /* width: 100%; */
         display: flex;
+    }
+    .cine{
+        width: 45px;
+    }
+    .p1{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .p2{
+        font-size: 10px;
     }
     
 }
